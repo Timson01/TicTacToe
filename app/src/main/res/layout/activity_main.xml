@@ -6,23 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <space.timur.tictactoe.TicTacToeView
-        android:id="@+id/ticTacToeField"
-        android:layout_width="350dp"
-        android:layout_height="350dp"
-        app:layout_constraintStart_toStartOf="parent"
+    <fragment
+        android:id="@+id/nav_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/randomFieldButton"
-        />
-
-    <Button
-        android:id="@+id/randomFieldButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/random_field"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:navGraph="@navigation/nav_graph"
+        app:defaultNavHost="true"
+        android:name="androidx.navigation.fragment.NavHostFragment"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

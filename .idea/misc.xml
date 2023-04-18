@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Studio Projects/TicTacToe/app/src/main/res/drawable/ic_baseline_person_1.xml" value="0.151" />
+        <entry key="..\:/Android Studio Projects/TicTacToe/app/src/main/res/drawable/ic_baseline_person_2.xml" value="0.151" />
+        <entry key="..\:/Android Studio Projects/TicTacToe/app/src/main/res/drawable/ic_tictactoe.xml" value="0.151" />
+        <entry key="..\:/Android Studio Projects/TicTacToe/app/src/main/res/drawable/rounded_button.xml" value="0.151" />
+        <entry key="..\:/Android Studio Projects/TicTacToe/app/src/main/res/layout-sw600dp/fragment_one_player.xml" value="0.46875" />
+        <entry key="..\:/Android Studio Projects/TicTacToe/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android Studio Projects/TicTacToe/app/src/main/res/layout/fragment_main.xml" value="0.25" />
+        <entry key="..\:/Android Studio Projects/TicTacToe/app/src/main/res/layout/fragment_one_player.xml" value="0.136" />
+        <entry key="..\:/Android Studio Projects/TicTacToe/app/src/main/res/layout/fragment_splash.xml" value="0.25" />
+        <entry key="..\:/Android Studio Projects/TicTacToe/app/src/main/res/layout/fragment_two_players.xml" value="0.1" />
         <entry key="..\:/Flutter projects/TicTacToe/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
@@ -12,5 +22,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.136" />
+      </ProjectState>
+    </option>
   </component>
 </project>

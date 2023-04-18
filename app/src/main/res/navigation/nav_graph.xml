@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_fragment"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="space.timur.tictactoe.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="space.timur.tictactoe.ui.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_onePlayerFragment"
+            app:destination="@id/onePlayerFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_twoPlayersFragment"
+            app:destination="@id/twoPlayersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onePlayerFragment"
+        android:name="space.timur.tictactoe.ui.one_player.OnePlayerFragment"
+        android:label="fragment_one_player"
+        tools:layout="@layout/fragment_one_player" />
+    <fragment
+        android:id="@+id/twoPlayersFragment"
+        android:name="space.timur.tictactoe.ui.two_players.TwoPlayersFragment"
+        android:label="TwoPlayersFragment" />
+</navigation>

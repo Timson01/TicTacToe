@@ -13,7 +13,7 @@ class TicTacToeField(
     val columns: Int
 ) {
 
-    private val cells = Array(rows) { Array(columns) { Cell.EMPTY } }
+    val cells = Array(rows) { Array(columns) { Cell.EMPTY } }
 
     val listeners = mutableSetOf<OnFieldChangedListener>()
 
