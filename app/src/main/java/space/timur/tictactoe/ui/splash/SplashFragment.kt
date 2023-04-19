@@ -28,7 +28,7 @@ class SplashFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         handler.postDelayed({
             findNavController().navigate(action)
-        }, 2000)
+        }, 900)
     }
 
     override fun onDestroyView() {

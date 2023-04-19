@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
+import com.google.android.gms.ads.AdRequest
 import space.timur.tictactoe.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
@@ -25,15 +26,18 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val addRequest = AdRequest.Builder().build()
+
         binding.apply {
             onePlayerBtn.setOnClickListener {
-                action = MainFragmentDirections.actionMainFragmentToOnePlayerFragment()
+                action = MainFragmentDirections.actionMainFragmentToPlayFragment(1)
                 findNavController().navigate(action!!)
             }
             twoPlayersBtn.setOnClickListener {
-                action = MainFragmentDirections.actionMainFragmentToTwoPlayersFragment()
+                action = MainFragmentDirections.actionMainFragmentToPlayFragment(2)
                 findNavController().navigate(action!!)
             }
+            adView.loadAd(addRequest)
         }
     }
 }
